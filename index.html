@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osama Alshalbe | Mobile Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --primary: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 20px; max-width: 1100px; margin: auto; }
+    
+    header { text-align: center; padding: 50px 20px; border-bottom: 1px solid var(--border); }
+    header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+    header p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 20px; }
+    .contacts { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .contacts a { color: var(--text-main); text-decoration: none; background: var(--card-bg); padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border); font-size: 0.9rem; transition: 0.3s; }
+    .contacts a:hover { border-color: var(--primary); color: var(--primary); }
+
+    section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.8rem; color: var(--primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .skill-card { background: var(--card-bg); padding: 20px; border-radius: 10px; border: 1px solid var(--border); }
+    .skill-card h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 10px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background: #0284c722; color: var(--primary); padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; border: 1px solid #0284c744; }
+
+    .project-card { background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 25px; }
+    .project-card h3 { color: var(--text-main); font-size: 1.4rem; margin-bottom: 10px; }
+    .project-card ul { margin-left: 20px; color: var(--text-muted); margin-bottom: 15px; }
+    .project-card li { margin-bottom: 8px; }
+
+    .badge-container { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+    .badge { background: var(--card-bg); border: 1px solid var(--border); padding: 15px 20px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; }
+    .badge h4 { color: var(--primary); font-size: 1.5rem; }
+
+    footer { text-align: center; padding: 30px 0; color: var(--text-muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Osama Alshalbe</h1>
+    <p>Junior Flutter Mobile Developer | Syrian & Brazilian National</p>
+    <div class="contacts">
+      <a href="mailto:alshalbeosama6@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/osama9994" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/osama-alshalbe-053409370" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://codeforces.com/profile/osama_47" target="_blank"><i class="fas fa-code"></i> Codeforces</a>
+    </div>
+  </header>
+
+  <section>
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p style="color: var(--text-muted);">
+      Junior Flutter Developer with hands-on experience building cross-platform mobile applications using Flutter, Firebase, and flutter_bloc. Skilled in developing scalable apps with REST API integration, offline caching, localization, and CI/CD automation via GitHub Actions & Jenkins. Open to remote & international roles.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span class="tag">Dart</span>
+          <span class="tag">C# (Algorithms)</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Mobile Development</h3>
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">flutter_bloc</span>
+          <span class="tag">Responsive UI</span>
+          <span class="tag">Localization</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Backend & Cloud</h3>
+        <div class="tags">
+          <span class="tag">Firebase Auth</span>
+          <span class="tag">Firestore</span>
+          <span class="tag">FCM Push</span>
+          <span class="tag">REST APIs (Dio/Retrofit)</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps & Storage</h3>
+        <div class="tags">
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Jenkins</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Hive</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-folder-open"></i> Featured Projects</h2>
+    
+    <div class="project-card">
+      <h3>Flutter News App</h3>
+      <ul>
+        <li>Built a cross-platform news app with secure link verification authentication, offline reading via Hive, and bilingual support (Arabic/English).</li>
+        <li>Implemented background reading reminders and real-time push notifications using Firebase Cloud Messaging (FCM).</li>
+        <li>Integrated NewsAPI using Dio & Retrofit with smart keyword search and feed filtering.</li>
+        <li>Automated CI/CD pipeline with GitHub Actions for linting, testing, and signed APK release builds using GitHub Secrets.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Hive</span><span class="tag">Dio</span><span class="tag">FCM</span><span class="tag">GitHub Actions</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>E-Commerce Application</h3>
+      <ul>
+        <li>Developed a full-featured e-commerce mobile app with authentication, product catalog, and responsive shopping cart UI following Material Design.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">flutter_bloc</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>AI Chat Application</h3>
+      <ul>
+        <li>Designed and built a modern conversational AI chat app with a clean and interactive interface.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Flutter</span><span class="tag">AI API</span><span class="tag">Responsive Design</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-trophy"></i> Highlights & Languages</h2>
+    <div class="badge-container">
+      <div class="badge">
+        <h4>250+</h4>
+        <p>Codeforces Problems Solved</p>
+      </div>
+      <div class="badge">
+        <h4>SVU BAIT</h4>
+        <p>Bachelor Expected 2027</p>
+      </div>
+      <div class="badge">
+        <h4>Languages</h4>
+        <p>Arabic (Native) | English (B2) | German (B2)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Osama Alshalbe. Built for GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
